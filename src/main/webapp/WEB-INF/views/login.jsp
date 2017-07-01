@@ -38,7 +38,7 @@
 </head>
 <body onload='document.loginForm.username.focus();'>
 
-	<h1>Spring Security Login Form (XML)</h1>
+	<h1>Spring Security Login Form (Database Authentication)</h1>
 
 	<div id="login-box">
 
@@ -69,7 +69,8 @@
 				</tr>
 			</table>
 
-			<input type="hidden" name="${_csrf.parameterName}"
+			<input type="hidden" 
+				name="${_csrf.parameterName}"
 				value="${_csrf.token}" />
 
 		</form>
